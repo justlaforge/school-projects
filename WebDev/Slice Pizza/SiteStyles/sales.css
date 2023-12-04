@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+#MainContent {
+   margin: 0px;
+   padding: 1px;
+   height:1050px;
+}
+
+#MainContent div {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 270px;
+}
+#MainContent img {
+    margin: 5px;
+    position: relative;
+    left: 10px;
+}
+
+#MainContent div h1 {
+    color: black;
+    font-size: 23px;
+    position: relative;
+    left: 10px;
+}
+
+#MainContent div h4 {
+    color: black;
+    font-family: 'Sans';
+    position: absolute;
+    font-size: 50px;
+    top: 120px;
+    left: 370px;
+}
+#MainContent div h4 em{
+    font-size: 60px;
+    position: relative;
+    top: 12px;
+    left: 0px;
+}
+
+#MainContent button {
+    position: absolute;
+    top:70px;
+    left:170px;
+}

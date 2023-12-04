@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+body {
+   background-color: #4f4f4f;
+   height: 100%;
+   color: #f3f3f3;
+   font-family: Verdana, Helvetica, Arial, sans-serif;
+   font-size: 0.9em;
+   margin: 0px;
+}
+
+#MainContent {
+   height: 1330px;
+   background-color: white;
+}
+
+footer {
+   height: 100px;
+   clear: both;
+   text-align: center;
+   color: #a9a9a9;
+   background-color: #4f4f4f;
+}
+
+
+#navigation {
+    margin: 0px;
+    height: 90px;
+    background-color: #2a0703;
+}
+
+logo {
+    margin: 0px;
+    width: 200px;
+    height: 90px;
+    background-color: #249c90;
+
+}
+
+#tab {
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 25%;
+    height: 50px;
+    width: 120px;
+    border: 4px solid white;
+    border-radius: 35px;
+}
+
+#tabtwo {
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 40%;
+    height: 50px;
+    width: 120px;
+    border: 4px solid white;
+    border-radius: 35px;
+}
+
+#tabthree {
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 55%;
+    height: 50px;
+    width: 120px;
+    border: 4px solid white;
+    border-radius: 35px;
+}
+
+#tabfour {
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 70%;
+    height: 50px;
+    width: 120px;
+    border: 4px solid white;
+    border-radius: 35px;
+}
+
+#current {
+    text-align: center;
+    height: 50px;
+    width: 120px;
+    background-color: #85200cff;
+    border-radius: 35px;
+}
+
+#PizzaImage1, #PizzaImage2, #PizzaImage3 {
+
+}
+
+#PizzaImage1 {
+    width: 100%;
+    height: 200px;
+    float: left;
+    margin: 0px; 
+    padding: 0px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-image:url("Pizza1.jpg");
+}
+#PizzaImage2 {
+    background-image:url("Pizza2.jpg");
+}
+#PizzaImage3 {
+    background-image:url("Pizza3.jpg");
+}
+#Gradient {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 140px;
+    background-image: linear-gradient(#00000000, black);
+}
+
+#MainContent div {
+    width: 700px;
+    height: 330px;
+    margin-top: 40px; 
+    padding: 0px;
+    background-color: white;
+    position: absolute;
+    border: 5px solid #000000;
+    border-radius: 2px;
+    box-shadow: 4px 4px 7px 7px #000000D0;
+}
+
+#boxOne {
+    color: black;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 290px;
+
+}
+.DeepDish {
+    border: 6px solid #000000;
+}
+#One{
+    border-right: 12px solid #000000;
+}
+#Two{
+    float: right;
+}
+#boxOne h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 65px;
+    position: absolute;
+    top: 143px;
+    left: -15px;
+    transform: rotate(-20deg);
+}
+#boxOne h2 {
+    font-family: 'Sans';
+    font-size: 48px;
+    position: absolute;
+    top: 220px;
+    left: 45px;
+}
+#boxOne h3 {
+    font-family: 'Sans';
+    font-size: 50px;
+    position: absolute;
+    top: 149px;
+    left: 466px;
+}
+#boxOne h3 em{
+    font-size: 60px;
+    position: relative;
+    top: 12px;
+    left: 0px;
+}
+#boxOne button {
+   position: relative;
+   top: 128px;
+   left: 200px;
+}
+button {
+    font-family: 'Impact';
+   height: 50px;
+   width: 140px;
+   background-color: #a61c00;
+   border: 4px solid black;
+   border-radius: 25px;
+   color: white;
+   font-size: 28px;
+   transition-duration: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #FFFFFF; 
+  color: black;
+}
+
+#MainContent > h1 {
+    color: #5f5f5f;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 680px;
+}
+
+menu a:link{
+    background-image: url(menu.png);
+    background-size: cover;
+    width: 700px;
+    height: 263px;
+    border: none;
+    border-radius: 0px;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 755px;
+}
+
+
+#boxTwo {
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 1010px;
+}
+
+#boxTwo h1 {
+    color: black;
+    font-size: 38px;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+
+#boxTwo h2 {
+    color: black;
+    font-family: 'Sans';
+    font-size: 28px;
+    position: absolute;
+    top: 262px;
+    left: 15px;
+}
+
+#boxTwo button {
+   position: relative;
+   top: 89px;
+   left: 200px;
+}
+
+/* hyperlink rules */
+a {
+   color: #FFFFFF;
+   font-size: 2em;
+   text-decoration: none;
+   font-family: "Arial";
+}
+a:link {
+   color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
+}
+#current a{
+   color: white;
+   font-size: 2.3em;
+   text-decoration: none;
+   font-family: "Impact";
+}
+#tabfour a {
+   font-size: 130%;
+}

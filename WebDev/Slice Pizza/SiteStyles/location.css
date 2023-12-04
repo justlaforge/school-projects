@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#MainContent {
+   margin: 0px;
+   padding: 1px;
+   height:1050px;
+}
+
+#MainContent div {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 140px;
+}
+
+#MainContent h3, h4 {
+    font-family: 'Sans';
+
+}
+
+#MainContent div h1 {
+    color: black;
+    font-size: 25px;
+    position: relative;
+    left: 10px;
+}
+
+#MainContent div h2 {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 550px;
+    top: 0px;
+}
+
+#MainContent div h3 {
+    color: #5F5F5F;
+    font-size: 24px;
+    position: relative;
+    left: 10px;
+    margin-top: 0px;
+}
+
+#MainContent div h4 {
+    color: #AFAFAF;
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+    margin-top: 0px;
+}
+
+#takeout{
+    position: relative;
+    left: 124px;
+    top: 35px;
+}
+#delivery{
+    position: relative;
+    left: 275px;
+    top: 35px;
+}
