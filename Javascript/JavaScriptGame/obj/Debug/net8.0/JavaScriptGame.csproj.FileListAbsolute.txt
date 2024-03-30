@@ -1,0 +1,14 @@
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\bin\Debug\net8.0\JavaScriptGame.exe
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\bin\Debug\net8.0\JavaScriptGame.deps.json
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\bin\Debug\net8.0\JavaScriptGame.runtimeconfig.json
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\bin\Debug\net8.0\JavaScriptGame.dll
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\bin\Debug\net8.0\JavaScriptGame.pdb
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.AssemblyInfoInputs.cache
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.AssemblyInfo.cs
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.csproj.CoreCompileInputs.cache
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.dll
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\refint\JavaScriptGame.dll
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.pdb
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\JavaScriptGame.genruntimeconfig.cache
+C:\Users\justl\JustinLaForge\Coastal_Carolina\csci_350\JavaScriptGame\obj\Debug\net8.0\ref\JavaScriptGame.dll
