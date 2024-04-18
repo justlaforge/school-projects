@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OTisGYuEVmkUl6dcuCW1lHBLD/dd7jJXfJ2Ww/lAcPS0x+9cHbzjkULtVU3jh+WqcdDewNDJsekZVQmb/KTBcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\justl\\JustinLaForge\\Coastal_Carolina\\school-projects\\FSharp\\FSharp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\justl\\.nuget\\packages\\fsharp.core\\8.0.200\\fsharp.core.8.0.200.nupkg.sha512"
+  ],
+  "logs": []
+}
