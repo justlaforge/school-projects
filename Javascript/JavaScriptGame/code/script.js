@@ -56,6 +56,7 @@ Array.prototype.last = function () {
   const transitioningSpeed = 2;
   const fallingSpeed = 2;
   
+  var heroSkin = "black"; //   ----- ADDITIONAL CODE ----- (1) ADDEDLINES1
   const heroWidth = 17; // 24
   const heroHeight = 30; // 40
   
@@ -69,14 +70,34 @@ Array.prototype.last = function () {
   const perfectElement = document.getElementById("perfect");
   const restartButton = document.getElementById("restart");
   const scoreElement = document.getElementById("score");
-  const highScoreElement = document.getElementById("highscore"); // ADDED LINE
+  const highScoreElement = document.getElementById("highscore"); // ADDEDLINES2
   const newHighScoreElement = document.getElementById("newhigh"); // ADDED LINE
+  const char1Box = document.getElementById("char1"); // ADDED LINE              ------
+  const char2Box = document.getElementById("char2"); // ADDED LINE              ------     
+  const charBoard = document.getElementById("characterBoard"); // ADDED LINE   
+
+  function charHover(c){          // v v ADDITIONAL LINES v v
+    if(c==1){
+      char1Box.style.backgroundColor = "#5E4A27";
+    } else{
+      char2Box.style.backgroundColor = "#5E4A27";
+    }
+  }
+
+  function endHover(c){
+    if(c==1){
+      char1Box.style.backgroundColor = "#8A6D39";
+    } else{
+      char2Box.style.backgroundColor = "#8A6D39";
+    }
+  }                               // ^ ^ ADDITIONAL LINES ^ ^
   
   // Initialize layout
   resetGame();
   
   // Resets game variables and layouts but does not start the game (game starts on keypress)
   function resetGame() {
+    selectedChar = false;
     // Reset game progress
     phase = "waiting";
     lastTimestamp = undefined;
@@ -177,11 +198,14 @@ Array.prototype.last = function () {
   });
   
   window.addEventListener("mousedown", function (event) {
-    if (phase == "waiting") {
+    if (phase == "waiting" & selectedChar) {
       lastTimestamp = undefined;
       introductionElement.style.opacity = 0;
       phase = "stretching";
       window.requestAnimationFrame(animate);
+      char1Box.style.display = "none";  //ADDEDLINES3
+      char2Box.style.display = "none";
+      charBoard.style.display = "none";
     }
   });
   
@@ -337,9 +361,11 @@ Array.prototype.last = function () {
       (window.innerHeight - canvasHeight) / 2
     );
   
-    // Draw scene
+    // Draw scene ADDEDLINES4
     drawPlatforms();
-    drawHero();
+    if(selectedChar){
+      drawHero();
+    }
     drawSticks();
   
     // Restore transformation
@@ -350,6 +376,9 @@ Array.prototype.last = function () {
     event.preventDefault();
     resetGame();
     restartButton.style.display = "none";
+    char1Box.style.display = "block";
+    char2Box.style.display = "block";
+    charBoard.style.display = "block";  // ADDED LINES 
   });
 
   // EVERYTHING BELOW THIS IS CODE FOR DRAWING
@@ -378,13 +407,22 @@ Array.prototype.last = function () {
     });
   }
   
-  function drawHero() {
+
+  // DRAW HERO
+
+  function drawHero() {       
     ctx.save();
-    ctx.fillStyle = "black";
-    ctx.translate(
-      heroX - heroWidth / 2,
-      heroY + canvasHeight - platformHeight - heroHeight / 2
-    );
+    if(heroSkin == "black") {//  v v ----- ADDITIONAL CODE ----- v v  ADDEDLINES5
+      ctx.fillStyle = "black";
+    } else {
+      ctx.fillStyle = "green";
+    }    
+
+      ctx.translate(
+        heroX - heroWidth / 2,
+        heroY + canvasHeight - platformHeight - heroHeight / 2
+      );
+    
   
     // Body
     drawRoundedRect(
@@ -404,14 +442,19 @@ Array.prototype.last = function () {
     ctx.arc(-legDistance, 11.5, 3, 0, Math.PI * 2, false);
     ctx.fill();
   
-    // Eye
-    ctx.beginPath();
+    // Eye         
+    ctx.beginPath();       
     ctx.fillStyle = "white";
     ctx.arc(5, -7, 3, 0, Math.PI * 2, false);
     ctx.fill();
   
-    // Band
-    ctx.fillStyle = "red";
+    // Band    
+    if(heroSkin == "black"){    //  v v ----- ADDITIONAL CODE ----- v v   ADDEDLINES6
+      ctx.fillStyle = "red";
+    } else {
+      ctx.fillStyle = "blue";
+    }                           //  ^ ^ ----- ADDITIONAL CODE ----- ^ ^ (5)
+
     ctx.fillRect(-heroWidth / 2 - 1, -12, heroWidth + 2, 4.5);
     ctx.beginPath();
     ctx.moveTo(-9, -14.5);
@@ -426,6 +469,26 @@ Array.prototype.last = function () {
   
     ctx.restore();
   }
+
+  //              ------- ADDITIONAL LINES -------- ADDEDLINES7
+  var selectedChar = false;
+  function choseChar(c){
+    heroX = 585.5;
+    heroY = 112;
+
+    selectedChar = true;
+    if(c == 1){
+      heroSkin = "black";
+      drawHero();
+    } else{
+      heroSkin = "green";
+      drawHero();
+    }
+    
+    heroX = platforms[0].x + platforms[0].w - heroDistanceFromEdge;
+    heroY = 0;
+  } //                -------------------
+
   
   function drawRoundedRect(x, y, width, height, radius) {
     ctx.beginPath();

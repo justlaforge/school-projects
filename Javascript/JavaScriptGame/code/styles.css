@@ -65,6 +65,61 @@ body {
   cursor: pointer;
 }
 
+/* ADDITIONAL LINES */
+#characterBoard {
+  width: 400px;
+  height: 160px;
+  position:absolute;
+  top:5%;
+  border-radius: 20%;
+  color: rgb(12, 11, 10);
+  background-color: rgb(197, 172, 88);
+  border: solid;
+  border-color: beige;
+  font-weight: 200;
+  font-size: 1.4em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+#char1 {
+  width: 82px;
+  height: 90px;
+  position:absolute;
+  top:13%;
+  left:41%;
+  border-radius: 5%;
+  background-color: rgb(138, 109, 57);
+  border: solid;
+  border-color: rgb(109, 103, 71);
+  color: black;
+  font-weight: 200;
+  font-size: 1.4em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+#char2 {
+  width: 82px;
+  height: 90px;
+  position:absolute;
+  top:13%;
+  left:53%;
+  border-radius: 5%;
+  background-color: rgb(138, 109, 57);
+  border: solid;
+  border-color: rgb(109, 103, 71);
+  color: green;
+  font-weight: 200;
+  font-size: 1.4em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ^ ADDITIONAL LINES ^ */
+
 #perfect {
   position: absolute;
   opacity: 0;
